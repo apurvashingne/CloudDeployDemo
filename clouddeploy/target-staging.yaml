@@ -4,6 +4,6 @@ metadata:
   name: staging
 description: staging cluster
 gkeCluster:
-  project: next-2021-dev203
+  project: searce-playground-v1
   cluster: staging
   location: us-central1

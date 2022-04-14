@@ -4,6 +4,6 @@ metadata:
   name: test
 description: test cluster
 gkeCluster:
-  project: next-2021-dev203
+  project: searce-playground-v1
   cluster: test
   location: us-central1

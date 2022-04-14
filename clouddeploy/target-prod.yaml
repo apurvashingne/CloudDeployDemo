@@ -5,6 +5,6 @@ metadata:
 description: prod cluster
 requireApproval: true
 gkeCluster:
-  project: next-2021-dev203
+  project: searce-playground-v1
   cluster: prod
   location: us-central1
