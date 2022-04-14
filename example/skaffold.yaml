@@ -7,7 +7,7 @@ build:
     - image: leeroy-app
       context: leeroy-app
   googleCloudBuild:
-    projectId: next-2021-dev203
+    projectId: searce-playground-v1
 deploy:
   kubectl:
     manifests:
