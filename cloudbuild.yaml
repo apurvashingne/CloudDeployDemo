@@ -4,7 +4,7 @@ steps:
       - skaffold
       - build
       - '--interactive=false'
-      - '--default-repo=us-central1-docker.pkg.dev/searce-playground-v1/priyanka-pipeline'
+      - '--default-repo=gcr.io/searce-playground-v1/priyanka-pipeline'
       - '--file-output=artifacts.json'
     dir: example
   - name: gcr.io/google.com/cloudsdktool/cloud-sdk
