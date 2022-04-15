@@ -5,14 +5,14 @@ steps:
       - build
       - '--interactive=false'
       - '--default-repo=gcr.io/searce-playground-v1/priyanka-pipeline'
-      - '--file-output=artifacts.json'
+      # - '--file-output=artifacts.json'
     dir: example
   - name: gcr.io/google.com/cloudsdktool/cloud-sdk
     args: 
       - '-c'
       - >
         gcloud deploy releases create $(date +%y%m%d-%s)
-        --delivery-pipeline=web-app --build-artifacts=artifacts.json
+        --delivery-pipeline=web-app 
         --source=./
         --region=us-central1
     dir: example
