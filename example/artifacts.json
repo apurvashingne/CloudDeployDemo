@@ -1,0 +1,1 @@
+{"builds":[{"imageName":"leeroy-web","tag":"gcr.io/searce-playground-v1/priyanka-pipeline/leeroy-web:601baf5@sha256:23fe2e139adf7dd9080d1fb302eeea5518a5576a6d2954541ff1f4b1a9e23380"},{"imageName":"leeroy-app","tag":"gcr.io/searce-playground-v1/priyanka-pipeline/leeroy-app:601baf5@sha256:5b06f6fcb6eb710dea5cfaa60173f6da7c54d2034e4c6830cb1d41e916f7f043"}]}
