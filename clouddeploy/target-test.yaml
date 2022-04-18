@@ -4,4 +4,4 @@ metadata:
   name: test
 description: test cluster
 gke:
-  cluster: projects/searce-playground-v1/locations/us-central1/clusters/test
+  cluster: projects/searce-playground-v1/locations/us-central1-a/clusters/test
