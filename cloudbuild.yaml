@@ -11,7 +11,7 @@ steps:
     args: 
       - '-c'
       - >
-        gcloud deploy releases create priyanka-test
+        gcloud deploy releases create priyanka-$(date +%y%m%d-%s)
         --delivery-pipeline=web-app --build-artifacts=artifacts.json
         --source=./
         --region=us-central1
