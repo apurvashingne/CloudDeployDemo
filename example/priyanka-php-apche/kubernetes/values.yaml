@@ -6,6 +6,6 @@ replicaCount: 1
 Service:
   type: LoadBalancer
 image:
-  repository: gcr.io/searce-playground-v1/priyanka-pipeline
-  tag: v1.1.0
+  repository: gcr.io/searce-playground-v1/priyanka-pipeline/priyanka-php-apche
+  #tag: v1.1.0
   pullPolicy: IfNotPresent
