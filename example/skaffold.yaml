@@ -18,7 +18,7 @@ deploy:
   helm:
     releases:
       - name: skaffold-helm
-        chartPath: priyanka-php-apache/kubernetes
+        chartPath: priyanka-php-apche/kubernetes
 portForward:
   - resourceType: deployment
     resourceName: leeroy-web
