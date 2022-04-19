@@ -6,6 +6,8 @@ build:
       context: leeroy-web
     - image: leeroy-app
       context: leeroy-app
+    - image: gcr.io/searce-playground-v1/priyanka-pipeline
+      context: priyanka-php-apche
   googleCloudBuild:
     projectId: searce-playground-v1
 deploy:
@@ -13,6 +15,19 @@ deploy:
     manifests:
       - leeroy-web/kubernetes/*
       - leeroy-app/kubernetes/*
+  helm:
+    releases:
+      - chartPath: priyanka-php-apache/kubernetes/
+        name: priyanka-php-apche
+        artifactOverrides:
+          image: gcr.io/searce-playground-v1/priyanka-pipeline # no tag present!
+        imageStrategy:
+          helm: {}
+        recreatePods: false
+        remote: false
+        skipBuildDependencies: false
+        useHelmSecrets: false
+        wait: false
 portForward:
   - resourceType: deployment
     resourceName: leeroy-web

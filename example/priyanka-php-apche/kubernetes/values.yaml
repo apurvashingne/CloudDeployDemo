@@ -1,0 +1,11 @@
+# Default values for priyanka-php-apache.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+Service:
+  type: LoadBalancer
+image:
+  repository: gcr.io/searce-playground-v1/priyanka-pipeline
+  tag: v1.1.0
+  pullPolicy: IfNotPresent
