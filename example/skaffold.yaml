@@ -17,7 +17,7 @@ deploy:
       - leeroy-app/kubernetes/*
   helm:
     releases:
-      - chartPath: priyanka-php-apache/kubernetes/
+      - chartPath: priyanka-php-apache/kubernetes
         name: priyanka-php-apche
         artifactOverrides:
           image: gcr.io/searce-playground-v1/priyanka-pipeline # no tag present!
