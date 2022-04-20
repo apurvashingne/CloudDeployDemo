@@ -4,4 +4,4 @@ metadata:
   name: staging
 description: staging cluster
 gke:
-  cluster: projects/searce-playground-v1/locations/us-central1/clusters/staging
+  cluster: projects/searce-playground-v1/locations/us-central1-b/clusters/staging

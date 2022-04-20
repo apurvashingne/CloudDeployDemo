@@ -5,4 +5,4 @@ metadata:
 description: prod cluster
 requireApproval: true
 gke:
-  cluster: projects/searce-playground-v1/locations/us-central1/clusters/prod
+  cluster: projects/searce-playground-v1/locations/us-central1-c/clusters/prod
