@@ -1,8 +1,0 @@
-apiVersion: deploy.cloud.google.com/v1
-kind: Target
-metadata:
-  name: prod
-description: prod cluster
-requireApproval: true
-gke:
-  cluster: projects/searce-playground-v1/locations/us-central1-c/clusters/prod
