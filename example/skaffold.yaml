@@ -4,10 +4,6 @@ build:
   tagPolicy:
     sha256: {}
   artifacts:
-    - image: leeroy-web
-      context: leeroy-web
-    - image: leeroy-app
-      context: leeroy-app
     - image: priyanka-php-apache
       context: priyanka-php-apche
   googleCloudBuild:
@@ -15,14 +11,4 @@ build:
 deploy:
   kubectl:
     manifests:
-      - leeroy-web/kubernetes/*
-      - leeroy-app/kubernetes/*
-  helm:
-    releases:
-      - name: skaffold-helm
-        chartPath: priyanka-php-apche/kubernetes
-portForward:
-  - resourceType: deployment
-    resourceName: leeroy-web
-    port: 8080
-    localPort: 9000
+      - k8.yaml
